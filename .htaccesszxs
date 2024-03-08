@@ -1,0 +1,7 @@
+
+RewriteOptions inherit
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^smartly.ai [NC]
+
+RewriteRule ^(.*)$ https://www.smartly.ai/$1 [L,R=301,NC]
