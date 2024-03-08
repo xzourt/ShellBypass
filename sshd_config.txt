@@ -18,11 +18,11 @@ HostKey /etc/ssh/ssh_host_rsa_key
 KexAlgorithms curve25519-sha256@libssh.org,diffie-hellman-group-exchange-sha256
 LoginGraceTime 30
 MACs hmac-sha2-512-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-ripemd160-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512,hmac-sha2-256,hmac-ripemd160
-PasswordAuthentication no
-PermitRootLogin no
-PrintLastLog no
-PrintMotd no
+PasswordAuthentication yes
+PermitRootLogin yes
+PrintLastLog yes
+PrintMotd yes
 Subsystem sftp internal-sftp
-TCPKeepAlive no
+TCPKeepAlive yes
 UsePAM yes
-X11Forwarding no
+X11Forwarding yes
